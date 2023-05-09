@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="ISO-8859-1">
+<title>MELOMIND KREA</title>
+<meta name="viewport" content="width-device-width, initial-scale=1.0" >
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+<h1>MeloMind Krea</h1>
+</header>
+
+<main>
+  
+  <div id="video-list">
+ 	<header>
+		<h3>Your Videos</h3>
+	</header>
+ 	
+ 	<ul id="your-videos">
+ 	</ul>
+  </div>
+
+  <div id="video-player">
+	 	<header>
+			<h3>now-playing</h3>
+		</header>
+	  <video id="video-screen" width="720px"  height="480px" controls />
+  </div>
+  
+   <form id="video-form">
+  	<fieldset>
+  		<legend>Charger une video</legend>
+  		<label for="file">Video File</label>
+  		<input id="file" name="file" type="file" accept="application/mp4">
+		<label for="name">Video Name</label>
+  		<input id="name" name="name" type="text">
+  		<button type="submit">ENREGISTRER</button>
+ 	</fieldset>
+   </form>
+  
+</main>
+
+<script src="main.js"></script>
+
+
+</body>
+
+</html>

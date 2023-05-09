@@ -1,0 +1,13 @@
+"filename", "language", "Java", "Java Properties", "XML", "Batch", "comment", "blank", "total"
+"c:\Users\mmduk\OneDrive\Documents\advanced-workspace\ecommerceapp\.mvn\wrapper\maven-wrapper.properties", "Java Properties", 0, 2, 0, 0, 0, 1, 3
+"c:\Users\mmduk\OneDrive\Documents\advanced-workspace\ecommerceapp\mvnw.cmd", "Batch", 0, 0, 0, 102, 51, 36, 189
+"c:\Users\mmduk\OneDrive\Documents\advanced-workspace\ecommerceapp\pom.xml", "XML", 0, 0, 64, 0, 0, 3, 67
+"c:\Users\mmduk\OneDrive\Documents\advanced-workspace\ecommerceapp\src\main\java\org\nioun\essentials\ecommerceapp\EcommerceappApplication.java", "Java", 9, 0, 0, 0, 0, 5, 14
+"c:\Users\mmduk\OneDrive\Documents\advanced-workspace\ecommerceapp\src\main\java\org\nioun\essentials\ecommerceapp\config\MyDataRestConfig.java", "Java", 45, 0, 0, 0, 7, 24, 76
+"c:\Users\mmduk\OneDrive\Documents\advanced-workspace\ecommerceapp\src\main\java\org\nioun\essentials\ecommerceapp\dao\ProductCategoryRepository.java", "Java", 9, 0, 0, 0, 0, 4, 13
+"c:\Users\mmduk\OneDrive\Documents\advanced-workspace\ecommerceapp\src\main\java\org\nioun\essentials\ecommerceapp\dao\ProductRepository.java", "Java", 12, 0, 0, 0, 1, 6, 19
+"c:\Users\mmduk\OneDrive\Documents\advanced-workspace\ecommerceapp\src\main\java\org\nioun\essentials\ecommerceapp\entity\Product.java", "Java", 46, 0, 0, 0, 0, 20, 66
+"c:\Users\mmduk\OneDrive\Documents\advanced-workspace\ecommerceapp\src\main\java\org\nioun\essentials\ecommerceapp\entity\ProductCategory.java", "Java", 27, 0, 0, 0, 2, 11, 40
+"c:\Users\mmduk\OneDrive\Documents\advanced-workspace\ecommerceapp\src\main\resources\application.properties", "Java Properties", 0, 6, 0, 0, 0, 3, 9
+"c:\Users\mmduk\OneDrive\Documents\advanced-workspace\ecommerceapp\src\test\java\org\nioun\essentials\ecommerceapp\EcommerceappApplicationTests.java", "Java", 9, 0, 0, 0, 0, 5, 14
+"Total", "-", 157, 8, 64, 102, 61, 118, 510

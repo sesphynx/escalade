@@ -1,0 +1,37 @@
+   
+server:
+   port: 9001
+
+spring:
+   application:
+     name: bien-service
+     
+   cloud:
+     config:
+        import: optional:configserver:http://localhost:8888/
+          
+        server:
+           git:
+             uri: file://C:/Users/mmduk/eclipse-workspace/git-config-local-repo
+       
+        enabled: false
+       
+        import-check:
+           enabled: false   
+   sleuth:
+      sampler:
+        probability: 1.0
+#spring.config.import=configserver:http://localhost:8888/
+
+eureka:
+   client:
+      register-with-eureka: true
+      fetch-registry: true
+      service-uri:
+        defaultZone: http://localhost:8761/eureka/
+   instance:
+     hostname: localhost 
+          
+
+
+   

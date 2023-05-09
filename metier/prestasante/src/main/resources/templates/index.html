@@ -1,0 +1,43 @@
+
+<!DOCTYPE html >
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>PRODUITS</title>
+</head>
+<body>
+<div th:switch="${prestasantes}">
+    <h2 th:case="null">No prestasantes yet!</h2>
+        <div th:case="*">
+            <h2>Prestasantes:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Consultation</th>
+                        <th>Date Consultation</th>
+                        <th>Domaine</th>
+                        <th>Description</th>
+                        <th>Prix</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr th:each="prestasante : ${prestasantes}">
+                    
+                    <td th:text="${prestasante.consultation}"></td>
+                    <td th:text="${prestasante.dateConsultation}"></td>
+                    <td th:text="${prestasante.domaine}"></td>
+                    <td th:text="${prestasante.description}"></td>
+                    <td th:text="${prestasante.price}"></td>
+                    <td><a th:href="@{/showUpdate/{prestasanteId}(prestasanteId=${prestasante.prestasanteId})}">Edit</a></td>
+                    <td><a th:href="@{/deletePrestasante/{prestasanteId}(prestasanteId=${prestasante.prestasanteId})}">Delete</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>      
+    <p><a href="/ajouterPrestasante">Add a new prestasante</a></p>
+</div>
+
+</body>
+</html>

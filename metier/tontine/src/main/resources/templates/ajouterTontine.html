@@ -1,0 +1,25 @@
+<!DOCTYPE html  >
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>CREER TONTINE</title>
+</head>
+<body>
+
+<form action="#" th:action="@{/saveTontine}" th:object="${tontine}" method="post" >
+<table>
+<tr><td>DATE DEBUT:</td> <td><input type="date" th:field="*{dateDebut}"  id="dateDebut"  /></td></tr> 
+<tr><td>DATE FIN: </td> <td> <input type="date" th:field="*{dateFin}" id="dateFin"/></td></tr>
+<tr><td>CYCLE </td> <td><input type="text" th:field="*{cycle}" id="cycle"/></td></tr>
+<tr><td>NOMBRE DE CYCLES : </td> <td><input type="number" th:field="*{nbreCycles}" id="nbreCycles"/></td></tr>
+<tr><td>MISE</td> <td><input type="text" th:field="*{mise}" id="mise"/></td></tr>
+<tr><td>CAGNOTTE</td> <td><input type="number" th:field="*{cagnotte}" id="cagnotte"/></td></tr>
+<tr><td></td> <td><input type="submit" value="enregistrer"/></td><td><input type="reset" value="reinitialiser"/></td></tr>
+</table>
+</form>
+${msg}
+
+<a href="index">AFFICHER LES TONTINES</a>
+
+</body>
+</html>

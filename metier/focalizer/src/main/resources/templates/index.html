@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>YOUR IP</title>
+<th:block th:insert="~{fragments/myfragments :: link}"></th:block>
+<th:block th:insert="~{fragments/myfragments :: head/script}"></th:block>
+
+<script type="text/javascript">
+    $(document).ready (function () {
+        $.get( "https://api.ipify.org?format=json", 
+          function( data ) {
+             $("#ip").val(data.ip) ;
+        });
+        })
+</script>
+
+  
+</head>
+<body>
+    <form id="ipForm" th:field="${ipForm}" th:action="@{/GeoIPTest}" method="POST">
+        <input type="text" name = "ipAddress" th:field="*{ip}"  id = "ip" class="form-control mb-4"/>
+        <input type="submit" name="submit" value="submit" /> 
+    </form>
+<div id="map" style="height: 500px; width:100%; position:absolute"></div>
+<footer>
+
+
+
+</footer>   
+</body>
+
+</html>

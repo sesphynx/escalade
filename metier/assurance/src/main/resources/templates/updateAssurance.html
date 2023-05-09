@@ -1,0 +1,29 @@
+<!DOCTYPE html >
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>METTRE A JOUR ASSURANCE</title>
+</head>
+<body>
+
+<form  action="#" th:action="@{/updateAssurance/{assuranceId}(assuranceId=${assurance.assuranceId})}" th:object="${assurance}" method="post">
+<table>
+
+<tr>   <td> </td>  <td> DATE DEBUT: </td> <td></td> <td><input type="date" id="dateDebut" th:field="*{dateDebut}" /></td>   </tr>
+
+<tr>   <td> </td>  <td> DATE FIN: </td> <td></td> <td><input type="date" id="dateFin" th:field="*{dateFin}" /></td>   </tr>
+ 
+<tr>   <td> </td>  <td> LIBELLE:  </td> <td></td> <td><input type="text" id="libelle" th:field="*{libelle}"/></td>   </tr>
+
+<tr>   <td> </td>  <td> DESCRIPTION: </td> <td></td> <td><input type="text" id="description" th:field="*{description}"/></td>   </tr>
+  
+<tr>   <td> </td>  <td> PRICE: </td> <td> </td> <td><input type="text" id="price" th:field="*{price}" /></td>   </tr>
+ 
+<tr>   <td> </td>  <td> <input type="reset" value="reset"/> </td> <td></td> <td><input type="submit" value="save"/></td>   </tr>
+
+</table>
+</form>
+
+
+</body>
+</html>

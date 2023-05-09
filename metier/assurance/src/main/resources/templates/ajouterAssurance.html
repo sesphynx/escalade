@@ -1,0 +1,32 @@
+<!DOCTYPE html  >
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>CREER ASSURANCE</title>
+</head>
+<body>
+
+<form action="#" th:action="@{/saveAssurance}" th:object="${assurance}" method="post" >
+<table> 
+<tr><td>DATE DEBUT: </td> <td> <input type="date" th:field="*{dateDebut}" id="dateDebut"/></td></tr>
+
+<tr><td>DATE FIN: </td> <td> <input type="date" th:field="*{dateFin}" id="dateFin"/></td></tr>
+
+<tr><td>LIBELLE</td> <td><input type="text" th:field="*{libelle}" id="libelle"/></td></tr>
+
+<tr><td>DESCRIPTION: </td> <td><select th:field="*{description}" id="description">
+							   <option th:each=" description:${descriptions}"
+							   		   th:value="${description}"
+							   		   th:text="${description}"	>collective</option></select></td></tr>
+
+<tr><td>PRICE : </td> <td><input type="number" th:field="*{price}" id="price"/></td></tr>
+
+<tr><td></td> <td><input type="submit" value="enregistrer"/></td><td><input type="reset" value="reinitialiser"/></td></tr>
+</table>
+</form>
+${msg}
+
+<a href="/assurance/index">AFFICHER LES ASSURANCES</a>
+
+</body>
+</html>

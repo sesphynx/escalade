@@ -1,0 +1,7 @@
+spring:
+  application:
+    name : chapiteau
+    
+jpa:
+  hibernate:
+    ddl-auto : update 

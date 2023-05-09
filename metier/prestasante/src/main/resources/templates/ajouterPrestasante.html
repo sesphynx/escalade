@@ -1,0 +1,33 @@
+<!DOCTYPE html  >
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>CREER PRESTASANTE</title>
+</head>
+<body>
+
+<form action="#" th:action="@{/savePrestasante}" th:object="${prestasante}" method="post" >
+<table>
+<tr><td>CONSULTATION: </td> <td> <select th:field="*{consultation}" id="consultation">
+ 								<option th:each="consultation : ${consultations}"
+ 										th:value="${consultation }"
+ 										th:text="${consultation }"
+ 										 >generale</option> </select></td></tr>        
+
+<tr><td>Date Consultation:</td> <td><input type="date" th:field="*{dateConsultation}"  id="dateConsultation"  /></td></tr> 
+
+<tr><td>DESCRIPTION: </td> <td><input type="text" th:field="*{description}" id="description"/></td></tr>
+
+<tr><td>DOMAINE: </td> <td> <input type="text" th:field="*{domaine}" id="domaine"/></td></tr>
+
+<tr><td>PRICE : </td> <td><input type="number" th:field="*{price}" id="price"/></td></tr>
+
+<tr><td></td> <td><input type="submit" value="enregistrer"/></td><td><input type="reset" value="reinitialiser"/></td></tr>
+</table>
+</form>
+${msg}
+
+<a href="/prestasante/index">AFFICHER LES PRESTASANTES</a>
+
+</body>
+</html>

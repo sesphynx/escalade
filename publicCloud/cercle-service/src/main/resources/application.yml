@@ -1,0 +1,7 @@
+spring:
+  application:
+    name : cercle
+    
+jpa:
+  hibernate:
+    ddl-auto : update 

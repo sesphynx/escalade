@@ -1,0 +1,31 @@
+<!DOCTYPE html >
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>METTRE A JOUR TONTINE</title>
+</head>
+<body>
+
+<form  action="#" th:action="@{/updateTontine/{tontineId}(tontineId=${tontine.tontineId})}" th:object="${tontine}" method="post">
+<table>
+
+<tr>   <td> </td>  <td> Date Debut: </td> <td></td> <td><input type="date" id="dateDebut" th:field="*{dateDebut}" /></td>   </tr>
+ 
+<tr>   <td> </td>  <td> DATE FIN:  </td> <td></td> <td><input type="date" id="dateFin" th:field="*{dateFin}"/></td>   </tr>
+
+<tr>   <td> </td>  <td> CYCLE: </td> <td></td> <td><input type="text" id="cycle" th:field="*{cycle}"/></td>   </tr>
+  
+<tr>   <td> </td>  <td> NBRE CYCLE: </td> <td> </td> <td><input type="number" id="nbreCycles" th:field="*{nbreCycles}" /></td>   </tr>
+  
+<tr>   <td> </td>  <td> MISE: </td> <td></td> <td><input type="number" id="mise" th:field="*{mise}"/></td>   </tr>
+
+<tr>   <td> </td>  <td> CAGNOTTE: </td> <td></td> <td><input type="number" id="cagnotte" th:field="*{cagnotte}"/></td>   </tr>
+ 
+<tr>   <td> </td>  <td> <input type="reset" value="reset"/> </td> <td></td> <td><input type="submit" value="save"/></td>   </tr>
+
+</table>
+</form>
+
+
+</body>
+</html>

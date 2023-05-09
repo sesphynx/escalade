@@ -1,0 +1,16 @@
+server:
+  port: 8191
+  servlet:
+    context-path:  /www.nioun.org    
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/funXMutulay/nioun-config-store
+          search-paths:
+           - 'service-config/*service'
+          #username: root
+          #passphrase: 12345
+          
+          

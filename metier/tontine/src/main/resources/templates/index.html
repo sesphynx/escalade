@@ -1,0 +1,44 @@
+
+<!DOCTYPE html >
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TONTINES</title>
+</head>
+<body>
+<div th:switch="${tontines}">
+    <h2 th:case="null">No tontines yet!</h2>
+        <div th:case="*">
+            <h2>Tontines:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date Debut</th>
+                        <th>Date FIN</th>
+                        <th>Cycle</th>
+                        <th>Nombre de Cycles</th>
+                        <th>Mise</th>
+                        <th>Cagnotte</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr th:each="tontine : ${tontines}">
+                    <td th:date="${tontine.dateDebut}"></td>
+                    <td th:date="${tontine.dateFin}"></td>
+                    <td th:text="${tontine.cycle}"></td>
+                    <td th:text="${tontine.nbreCycles}"></td>
+                    <td th:text="${tontine.mise}"></td>
+                    <td th:text="${tontine.cagnotte}"></td>
+                    <td><a th:href="@{/showUpdate/{tontineId}(tontineId=${tontine.tontineId})}">Edit</a></td>
+                    <td><a th:href="@{/deleteTontine/{tontineId}(tontineId=${tontine.tontineId})}">Delete</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>      
+    <p><a href="/tontine/ajouterTontine">Add a new tontine</a></p>
+</div>
+
+</body>
+</html>

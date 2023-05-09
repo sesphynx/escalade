@@ -1,0 +1,10 @@
+package org.quantum.nine.magma.resto.util;
+
+
+public interface EmailUtil {
+	
+	
+	public void sendEmail ( String toAddress ,String subject , String body);
+
+
+}

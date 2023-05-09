@@ -1,0 +1,7 @@
+spring:
+  application:
+    name : profil
+    
+jpa:
+  hibernate:
+    ddl-auto : update 
