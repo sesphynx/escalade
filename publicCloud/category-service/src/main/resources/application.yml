@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/essentials_nioundb?createDatabaseIfNotExist=true
     username: root
-    password: Mombijou1
+    password: ******1
     driver-class-name: com.mysql.jdbc.Driver
   jpa:
     hibernate:

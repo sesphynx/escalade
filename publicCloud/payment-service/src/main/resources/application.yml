@@ -2,7 +2,7 @@ spring:
   datadource:
     url: jdbc::mysql:://localhost:3306/essentials_payment?cretaDatabaseIfNotExist=true
     username: root
-    password: Mombijou1
+    password: ******1
     driver-class-name: com.mysql.jdbc.Driver
     
   jpa:
